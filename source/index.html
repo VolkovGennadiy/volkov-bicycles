@@ -7,9 +7,74 @@
   <title>Велосипеды</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="paga-body">
-  <header class="page-header"></header>
+<body class="page-body">
+  <header class="page-header page-header-wrap">
+    <section class="page-header navigation">
+      <h2>Навигация</h2>
+      <a class="navigation__logo">
+        <img src="img/logo.svg" width="68" height="21" alt="Логотип магазина Вилосипедов Муун">
+      </a>
+      <nav class="navigation__desktop">
+        <button class="navigation__button" type="button">
+          <span>Меню</span>
+        </button>
+        <ul class="navigation__list no-bulites">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">О нас</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Виды велосипедов</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Видео про велосипеды</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="navigation__mobile navigation__mobile--hidden">
+        <button class="navigation__mobile-close" type="button">
+          <span>Меню</span>
+        </button>
+        <ul class="navigation__mobile-list no-bulites">
+          <li class="navigation__mobile-item">
+            <a class="navigation__mobile-link" href="#">О нас</a>
+          </li>
+          <li class="navigation__mobile-item">
+            <a class="navigation__mobile-link" href="#">Виды велосипедов</a>
+          </li>
+          <li class="navigation__mobile-item">
+            <a class="navigation__mobile-link" href="#">Видео про велосипеды</a>
+          </li>
+          <li class="navigation__mobile-item">
+            <a class="navigation__mobile-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section class="page-header main-block">
+      <div class="main-block__intro">
+        <h1>Мы продаем велосипеды</h1>
+        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      </div>
+      <div class="main-block__form">
+        <form action="https://echo.htmlacademy.ru" method="post" autocomplete="off"></form>
+        <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+        <div class="main-block__field">
+          <label class="visually-hidden" for="user-name">Ваше имя</label>
+          <input type="text" name="name" id="user-name" placeholder="Введите ваше имя" required>
+        </div>
+        <div class="main-block__field">
+          <label class="visually-hidden" for="user-phone">Ваш номер телефона</label>
+          <input type="tel" name="phone" id="user-phone" placeholder="Введите Ваш номер телефона" required>
+        </div>
+        <button type="button" class="main-block__button">Подобрать велосипед мечты</button>
+      </div>
+    </section>
+  </header>
   <main class="page-main"></main>
   <footer class="page-footer"></footer>
+  <script src="js/main.js" type="module"></script>
 </body>
 </html>

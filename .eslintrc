@@ -1,7 +1,14 @@
-root: true
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true
+    }
+  },
 
-env:
-  browser: true
+  "env": {
+      "es6": true
+  }
+}
 
-extends:
-  "htmlacademy/es5"

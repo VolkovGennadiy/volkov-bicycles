@@ -1,12 +1,16 @@
 .about-facts {
   margin: 0 auto;
+  padding-top: 126px;
+  min-height: 502px;
 
   @media (max-width: $tablet-width) {
     padding-top: 393px;
+    min-height: 477px;
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 410px;
+    min-height: 797px;
   }
 }
 
@@ -30,6 +34,7 @@
   display: flex;
   width: 1168px;
   gap: 38px;
+  margin: 0 auto;
 
   @media (max-width: $tablet-width) {
     width: 559px;
@@ -61,6 +66,10 @@
   letter-spacing: -1.27273px;
   color: #0AD9C6;
   margin-bottom: 15px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 14px;
+  }
 }
 
 .about-facts__item span{

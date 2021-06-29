@@ -1,5 +1,10 @@
 .contacts {
   margin: 0 auto;
+  padding-top: 218px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 132px;
+  }
 }
 
 .contacts__search {

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title>Велосипеды</title>
+  <link rel='stylesheet' href='css/style.min.css'>
+</head>
+<body class='page-body'>
+  <header class='page-header'>
+    <section class='page-header navigation navigation__mobile--nojs'>
+      <h2>Навигация</h2>
+      <a class='navigation__logo' href='#'>
+        <img src='img/logo.svg' width='68' height='21' alt='Логотип магазина Вилосипедов Муун'>
+      </a>
+      <nav class='navigation__desktop'>
+        <button class='navigation__button' type='button'>
+          <span>Меню</span>
+        </button>
+        <ul class='navigation__list no-bulites'>
+          <li class='navigation__item'>
+            <a class='navigation__link' href='#about'>О нас</a>
+          </li>
+          <li class='navigation__item'>
+            <a class='navigation__link' href='#typebicucles'>Виды велосипедов</a>
+          </li>
+          <li class='navigation__item'>
+            <a class='navigation__link' href='#videobicucles'>Видео про велосипеды</a>
+          </li>
+          <li class='navigation__item'>
+            <a class='navigation__link' href='#contact'>Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class='navigation__mobile navigation__mobile--hidden'>
+        <button class='navigation__mobile-close ' type='button'>
+          <span>Меню</span>
+        </button>
+        <ul class='navigation__mobile-list no-bulites'>
+          <li class='navigation__mobile-item'>
+            <a class='navigation__mobile-link' href='#about'>О нас</a>
+          </li>
+          <li class='navigation__mobile-item'>
+            <a class='navigation__mobile-link' href='#'>Виды велосипедов</a>
+          </li>
+          <li class='navigation__mobile-item'>
+            <a class='navigation__mobile-link' href='#'>Видео про велосипеды</a>
+          </li>
+          <li class='navigation__mobile-item'>
+            <a class='navigation__mobile-link' href='#'>Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section class='page-header main-block navigation__mobile--nojs'>
+      <div class='main-block__wrapper'>
+        <div class='main-block__intro'>
+          <h1>Мы продаем велосипеды</h1>
+          <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </div>
+        <div class='main-block__form'>
+          <form action='https://echo.htmlacademy.ru' method='post' autocomplete='off'></form>
+          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <div class='main-block__field'>
+            <label class='visually-hidden' for='user-name'>Ваше имя</label>
+            <input type='text' name='name' id='user-name' placeholder='Введите ваше имя' required>
+          </div>
+          <div class='main-block__field'>
+            <label class='visually-hidden' for='user-phone'>Ваш номер телефона</label>
+            <input type='tel' name='phone' id='user-phone' placeholder='Введите Ваш номер телефона' required>
+          </div>
+          <button type='submit' class='main-block__button'>Подобрать велосипед мечты</button>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main class='page-main'>
+    <section class='about-facts'>
+      <a id='about'></a>
+      <h2>Несколько фактов о нас</h2>
+      <ul class='about-facts__list no-bulites'>
+        <li class='about-facts__item'>
+          <p>01</p>
+          <span>Самый широкий выбор велосипедов!</span>
+        </li>
+        <li class='about-facts__item'>
+          <p>02</p>
+          <span>Доставка велосипедов по всей России!</span>
+        </li>
+        <li class='about-facts__item'>
+          <p>03</p>
+          <span>Большой выбор крутых аксессуаров!</span>
+        </li>
+        <li class='about-facts__item'>
+          <p>04</p>
+          <span>Профессиональные консультации!</span>
+        </li>
+      </ul>
+    </section>
+    <section class='types'>
+      <a id='typebicucles'></a>
+      <h2>Виды велосипедов</h2>
+      <ul class='types__list no-bulites'>
+        <li class='types__item types__item--road'>
+          <div class='types__item-destop'>
+            <picture>
+              <source type='image/webp' srcset='img/roadbike-desktop.webp 1x, img/roadbike-desktop2x.webp 2x'>
+              <img src='img/roadbike-desktop.jpg' width='342' height='503' alt='Велосипед для ежедневных поездок'>
+            </picture>
+          </div>
+          <div class='types__item-tablet'>
+            <picture>
+              <source type='image/webp' media='(max-width: 1023px)' srcset='img/road-bike.webp 1x, img/road-bike2x.webp 2x'>
+              <img src='img/road-bike.jpg' width='270' height='300' alt='Велосипед для ежедневных поездок'>
+            </picture>
+          </div>
+          <span>Дорожный велосипед</span>
+        </li>
+        <li class='types__item types__item--mountain'>
+          <div class='types__item-destop'>
+            <picture>
+              <source type='image/webp' srcset='img/mountainbaki-desktop.webp 1x, img/mountainbaki-desktop2x.webp 2x'>
+              <img src='img/mountainbaki-desktop.jpg' width='342' height='566' alt='Велосипед для экстремальных и туристических поездок'>
+            </picture>
+          </div>
+          <div class='types__item-tablet'>
+            <picture>
+              <source type='image/webp' media='(max-width: 1023px)' srcset='img/mountain-bike.webp 1x, img/mountain-bike2x.webp 2x'>
+              <img src='img/mountain-bike.jpg' width='270' height='300' alt='Велосипед для экстремальных и туристических поездок'>
+            </picture>
+          </div>
+          <span>Горный велосипед</span>
+        </li>
+        <li class='types__item types__item--child'>
+          <div class='types__item-destop'>
+            <picture>
+              <source type='image/webp' srcset='img/childbike-desktop.webp 1x, imgchildbike-desktop.webp 2x'>
+              <img src='img/childbike-desktop.jpg' width='342' height='513' alt='Для самых юных велосипидистов'>
+            </picture>
+          </div>
+          <div class='types__item-tablet'>
+            <picture>
+              <source type='image/webp' media='(max-width: 1023px)' srcset='img/child-bike.webp 1x, img/child-bike2x.webp 2x'>
+              <img src='img/child-bike.jpg' width='270' height='300' alt='Для самых юных велосипидистов'>
+            </picture>
+          </div>
+          <span>Детский велосипед</span>
+        </li>
+      </ul>
+    </section>
+    <section class='video-bicucles'>
+      <a id='videobicucles'></a>
+      <div class='video-bicucles__wrapper'>
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+      </div>
+      <div class='video-bicucles__block'>
+        <video class='video-bicucles__movie' width='929' height='522' poster='img/videoprewiev-desktop.png'></video>
+        <button class='video-bicucles__button'>
+          <span>Кнопка</span>
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class='page-footer contacts'>
+    <a id='contact'></a>
+    <div class='contacts__search'>
+      <p>Как нас найти?</p>
+      <span>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</span>
+    </div>
+    <picture>
+      <source type='image/webp' srcset='img/map-desktop-rezerv.webp 1x, img/map-desktop-rezerv.webp 2x'>
+      <img src='img/map-desktop-rezerv.jpg' width='957' height='530' alt='Карта с адресом нашего великолепного магазина'>
+    </picture>
+    <div class='contacts__connection'>
+      <a class='contacts__link contacts__link--email' href='mailto:puteshestviemechta@gmail.ru'>puteshestviemechta@gmail.ru</a>
+      <a class='contacts__link contacts__link--phone' href='tel:+7(499)-784-684-46'>+7 (499) -784-684-46</a>
+    </div>
+  </footer>
+  <script src='js/main.js' type='module'></script>
+</body>
+</html>

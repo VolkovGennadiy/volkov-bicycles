@@ -1,0 +1,114 @@
+.video-bicucles {
+  width: 100%;
+  height: 706px;
+  background-color: #131314;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    height: 413px;
+  }
+}
+
+.video-bicucles__wrapper {
+  width: 353px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    width: 420px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 286px;
+  }
+}
+
+.video-bicucles__wrapper h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 121px;
+  margin-bottom: 21px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    padding-top: 70px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 84px;
+  }
+}
+
+.video-bicucles__wrapper p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.video-bicucles__block {
+  position: relative;
+  margin: 0 auto;
+  width: 926px;
+  padding-top: 38px;
+
+  @media (max-width: $tablet-width) {
+    width: 502px;
+    padding-top: 23px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 291px;
+    padding-top: 36px;
+  }
+}
+
+.video-bicucles__button {
+  position: absolute;
+  top: 47%;
+  left: 46.5%;
+  width: 73px;
+  height: 73px;
+  background-image: url('../img/button-play-desktop.svg');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    width: 91px;
+    height: 91px;
+    top: 38%;
+    left: 41.1%;
+    background-image: url('../img/button-play-tablet.svg');
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: url('../img/button-play-desktop.svg');
+    top: 41%;
+    left: 39.1%;
+  }
+}
+
+.video-bicucles__button span {
+  visibility: hidden;
+}
+
+.video-bicucles__movie {
+  @media (max-width: $tablet-width) {
+    width: 503px;
+    height: 282px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+    height: 162px;
+  }
+}

@@ -1,0 +1,246 @@
+.page-header {
+  position: relative;
+  background-image: url('../img/background-desktop.jpg');
+  background-color: #808080;
+  height: 825px;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 0;
+  margin-bottom: 127px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/background-desktop2x.jpg');
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url('../img/bacground-tablet.jpg');
+    height: 340px;
+    margin-top: 0;
+    margin-bottom: 394px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/bacground-tablet2x.jpg');
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: url('../img/background-mobile.jpg');
+    margin-bottom: 410px;
+    height: 389px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/background-mobile2x.jpg');
+    }
+  }
+}
+
+.main-block {
+  margin-top: 287px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 71px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 21px;
+  }
+}
+
+.main-block__wrapper {
+  position: relative;
+  width: 881px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  top: 44.6%;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    width: 768px;
+    top: 21%;
+    align-items: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 320px;
+    top: 5%;
+  }
+}
+
+.main-block__intro {
+  width: 393px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (max-width: $tablet-width) {
+    width: 768px;
+    gap: 19px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 320px;
+  }
+}
+
+.main-block__intro h1 {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  margin: 0;
+
+
+  @media (max-width: $tablet-width) {
+    font-weight: 600;
+    text-align: center;
+    font-size: 30px;
+    line-height: 42px;
+    margin-top: 64px;
+    letter-spacing: 0.55px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 101px;
+  }
+}
+
+.main-block__intro p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin: 0;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    text-align: center;
+    width: 400px;
+    align-self: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 300px;
+  }
+}
+
+.main-block__form {
+  width: 328px;
+  margin-top: -44px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 150px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 320px;
+    margin-top: 139px;
+  }
+}
+
+.main-block__form-block {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  @media (max-width: $tablet-width) {
+    align-self: center;
+  }
+}
+
+.main-block__form p {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  min-height: 68px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    color: #000000;
+    width: 325px;
+    align-self: center;
+    letter-spacing: 0.02px;
+    padding-bottom: 12px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 280px;
+  }
+}
+
+.main-block__form input {
+  -webkit-appearance: none;
+  background: #FFFFFF;
+  border: 1px solid #c9ccd4;
+  border-radius: 6px;
+  width: 293px;
+  height: 38px;
+  padding-left: 30px;
+  padding-top: 7px;
+  font-size: 15px;
+  line-height: 24px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 21px;
+    width: 296px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 260px;
+    padding-left: 24px;
+  }
+}
+
+.main-block__form input::placeholder {
+  font-size: 15px;
+  line-height: 24px;
+  color: #1C1C1C;
+  opacity: 0.5;
+  letter-spacing: 0.5px;
+}
+
+.main-block__field {
+  padding-bottom: 12px;
+
+  @media (max-width: $tablet-width) {
+    align-self: center;
+  }
+}
+
+.main-block__button {
+  width: 326px;
+  height: 51px;
+  background-color: #0ad9c6;
+  border-radius: 6px;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 21px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #00FA9A;
+  }
+
+  &:active {
+    background-color: #98FB98;
+  }
+
+  @media (max-width: $tablet-width) {
+    align-self: center;
+    width: 321px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+  }
+}

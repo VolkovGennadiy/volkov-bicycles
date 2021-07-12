@@ -1,0 +1,138 @@
+.contacts {
+  margin: 0 auto;
+  padding-top: 115px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 132px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 74px;
+  }
+}
+
+.contacts__search {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 162px;
+
+  @media (max-width: $tablet-width) {
+    width: 642px;
+    min-height: 102px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+
+.contacts__search p {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: #1F1F1F;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+    line-height: 29px;
+  }
+}
+
+.contacts__search span {
+  font-size: 17px;
+  line-height: 31px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.contacts__link {
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.contacts__connection {
+  width: 532px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-width) {
+    height: 53px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    width: 250px;
+    padding-top: 25px;
+    margin-left: 47px;
+    gap: 24px;
+    padding-bottom: 70px;
+    flex-wrap: nowrap;
+  }
+}
+
+.contacts__link--email {
+  position: relative;
+  margin-left: 26px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-image: url('../img/email.svg');
+    top: 1px;
+    left: -42px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.contacts__link--phone {
+  position: relative;
+  margin-left: 26px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-image: url('../img/phone.svg');
+    top: -3px;
+    left: -36px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.contacts img {
+  object-fit: cover;
+
+  @media (max-width: $tablet-width) {
+    width: 698px;
+    height: 545px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 320px;
+    height: 250px;
+    padding-top: 20px;
+  }
+}
